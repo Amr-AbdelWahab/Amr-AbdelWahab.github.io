@@ -1,0 +1,80 @@
+
+
+/*  =================
+    2. header
+    =================*/
+
+
+
+header {
+  height: 90px;
+  display: flex;
+  background-color: #1C5253;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all .5s ease-in-out;
+}
+
+.fas{
+  font-size: 30px;
+}
+
+.logo{
+  width: 200px;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+  
+
+    #lg{
+      width: 110px;
+      transition: all 1s;
+    }
+
+    #lg:hover{
+      transform: rotate(2deg);
+    }
+
+
+    #slogan{
+        display: inline-block;
+        color: #319092;
+        font-family:sans-serif;
+        font-size: 13px;
+    }
+
+nav{
+  width: 600px;
+  display: flex;  
+  justify-content: space-around;
+}
+
+
+
+nav a{
+  color: white;
+  font-family: sans-serif;
+  text-decoration: none;
+  opacity: 0.3;
+  transition: all 0.5s ;
+
+}
+
+nav a:hover {
+  opacity: 1;
+  transform: rotate(-5deg);
+
+}
+
+
+
+
+
+

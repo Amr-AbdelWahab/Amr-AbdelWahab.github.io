@@ -1,0 +1,254 @@
+/*  =================
+    tale of contants
+    =================
+    1. global styles
+    2. header
+    3. middle
+    4. footer
+*/
+
+/*  =================
+    1. global styles
+    =================*/
+
+* {
+  margin: 0px;
+}
+html {
+  position: relative;
+}
+
+/*============================================*/
+
+html {
+  box-sizing: border-box;
+  transition: all .5s;
+
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+/*============================================*/
+/* ----------------------------- paragragh font ----------------------------- */
+
+@font-face {
+  font-family: Changa;
+  src: url("../Fonts/Changa/Changa-VariableFont_wght.ttf");
+}
+
+/* ------------------------------------ head font ----------------------------------- */
+
+html {
+  background-image: url(../PIC/wave_cover2.png);
+  background-size: cover;
+  background-position-y: bottom;
+  background-color: #d0ebfa;
+  font-family: changa;
+  scroll-behavior: smooth;
+}
+
+/*  =================
+2. header separate style file
+=================*/
+
+/*  =================
+3. middle
+=================*/
+
+.mid {
+  /* height: 510px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c5253;
+  min-width: 450px;
+  height: calc(100vh - 168px);
+}
+
+.welcome {
+  border: 2px dashed #fff;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 100px;
+  width: 80%;
+  max-width: 1000px;
+}
+.mid1 {
+  /* height: 510px; */
+  /* border: 10px solid #000; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 450px;
+  margin-bottom: 100px;
+  min-height: calc(100vh - 190px);
+}
+.sec1 {
+  border: 2px dashed #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 100px;
+  width: 80%;
+  max-width: 1000px;
+}
+
+.mid h1 {
+  font-size: 40px;
+  line-height: 1.6;
+  margin-top: 50px;
+  font-family: changa, sans-serif;
+}
+
+.mid h2,
+.art h2 {
+  font-family: changa, sans-serif;
+  margin-bottom: 10px;
+}
+
+.mid p {
+  font-size: 22px;
+  font-family: changa;
+  text-align: center;
+}
+
+section {
+  margin: 15px;
+  font-family: sans-serif;
+  font-size: 13px;
+  /* padding: 20px; */
+}
+
+.fa-angle-double-down {
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.5s all;
+  text-decoration: none;
+  /* color: black; */
+  color: rgb(59, 15, 15);
+}
+
+.fa-angle-double-down:hover {
+  transform: scale(1.1);
+  color: white;
+}
+
+
+
+
+.art {
+  /* border: 2px dashed gray; */
+  border: 2px dashed rgb(255, 94, 0);
+  width: 80%;
+  min-height: 50%;
+  max-width: 1000px;
+  border-radius: 15px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* text-align: center; */
+}
+
+.art h2 {
+  /* border: 1px solid #000; */
+  color: rgb(255, 255, 255);
+  background-color: #1c385396;
+  letter-spacing: 5px;
+  font-weight: 100;
+  border-radius: 15px;
+  padding: 0 15px ;
+  margin-bottom: 30px;
+  /* text-decoration: underline; */
+
+}
+.art p {
+  font-size: 22px;
+  font-family: changa;
+  text-align: center;
+}
+
+
+.card_cont {
+  /* border: 1px solid #000; */
+  /* padding: 10px; */
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+  /* align-items: center; */
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  /* border: 1px solid rgb(228, 24, 24); */
+  border-radius: 15px;
+  background-color: #1c5253dc;
+  width: 290px;
+  height: 130px;
+  min-width: 200px;
+  margin: 10px;
+  margin-bottom: 30px;
+  padding: auto;
+  /* position: relative; */
+  transition: 0.5s all ease-in-out;
+}
+
+.back_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card p{
+  margin: auto;
+  position: relative;
+  bottom: -70px;
+  font-weight: 400;
+  color: white;
+  font-size: 15px;
+  width: 90%;
+  transition: .5 all ease-in-out;
+}
+
+
+.card:hover {
+  border-radius: 5px;
+  background-color: #1c525341;
+  box-shadow: 0 4px 8px 0 rgba(255, 115, 0, 0.623), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.card:hover  p {
+  color: #000;
+  font-weight: 600;
+
+}
+
+.card img{
+  width: 180px;
+  transition: .5s all;
+  position: absolute;
+}
+.card:hover .ilogo {
+  transform: scale(1.1);
+  transform: rotate(-5deg);
+  transform: translateY(-10px);
+}
+
+
+
+
+

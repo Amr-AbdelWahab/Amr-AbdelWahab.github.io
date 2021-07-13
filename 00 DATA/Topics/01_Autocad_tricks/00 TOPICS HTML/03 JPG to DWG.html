@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JPG to DWG Autocad</title>
+
+    <link
+      href="../../../Logo/lisp_48px.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+
+    <link rel="stylesheet" href="../../../CSS/all.min.css" />
+    <link rel="stylesheet" href="../../../CSS/STYLE.css" />
+    <link rel="stylesheet" href="../../../CSS/STYLE_footer.css" />
+    <link rel="stylesheet" href="../../../CSS/STYLE_Autocad_tricks_Topic.css" />
+    <link rel="stylesheet" href="../../../CSS/STYLE_header topic.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a style="opacity: 1" href="../../../../application.html"
+          ><img id="lg" src="../../../Logo/3O-01.png" alt="3O-01.png"
+        /></a>
+
+        <p id="slogan">
+          "Everything <br />
+          you can <br />
+          imagine <br />
+          is real"
+        </p>
+      </div>
+
+      <nav>
+        <ul class="nav-list">
+          <li class="mlist">
+            <a href="../../../../application.html"
+              ><i class="navico fas fa-home"></i>
+              <p class="navp">home</p>
+            </a>
+          </li>
+
+          <li class="mlist">
+            <a href="../../../About_us.html"
+              ><i class="navico fas fa-address-card"></i>
+              <p class="navp">about us</p>
+            </a>
+          </li>
+
+          <li class="mlist">
+            <a href="../../../../00 DATA/Autocad_tricks.html"
+              ><i class="navico fas fa-sign-in-alt"></i>
+              <p class="navp">Back</p>
+            </a>
+          </li>
+
+          <li class="mlist" id="ham">
+            <a
+              ><i id="hamburger" class="navico fas fa-hamburger"></i>
+              <p id="hamp" class="navp">more</p>
+            </a>
+
+            <div class="sub-prnt">
+              <ul id="more" class="sub-menu" dir="ltr">
+                <li><a href="01_DWG_COMPARE.html">01 DWG_COMPARE</a></li>
+                <li><a href="02 PDF 2 DWG.html">02 PDF 2 DWG</a></li>
+                <li><a href="03 JPG to DWG.html">03 JPG to DWG</a></li>
+                <li>
+                  <a href="04 By Layer vs BY Block.html"
+                    >04 By Layer vs BY Block</a
+                  >
+                </li>
+                <li>
+                  <a href="05 Array in AutoCAD.html">05 Array in AutoCAD</a>
+                </li>
+                <li>
+                  <a href="06 Copy Array - Fit.html">06 Copy Array - Fit</a>
+                </li>
+                <li>
+                  <a href="07 Installing FONTS & Text Style in AutoCad.html"
+                    >07 FONTS & Text Style</a
+                  >
+                </li>
+                <li><a href="08 CHANGE PGP.html">08 pgp file</a></li>
+                <li><a href="09 Fatal Error.html">09 Fatal Error</a></li>
+                <li>
+                  <a href="10 PDF to DWG - Scale Reference in AutoCad.html"
+                    >10 Scale Reference</a
+                  >
+                </li>
+                <li>
+                  <a href="11 lisp in Autocad - part 1.html">11 lisp part 1</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <article>
+      <h1 id="topTitle" class="">JPG to DWG Autocad</h1>
+
+      <div class="topic">
+        <div>
+          <br />
+          <p dir="rtl" class="parag_comp" id="long-p">
+            <span class="mark fststatment">
+              !! المعماري جيه اخيرا بس جيه JPG !!
+            </span>
+            <br />
+            محتاج اظهر تفصيله داخل ملف الاوتوكاد اللي شغال عليه لكن للاسف
+            التفصيله اللي عندي عبارة عن صورة <span class="mark"> JPG </span> ...
+            <br />
+            فهل ده ممكن من غير ما ابقي مضطر اني ابعت الصورة الـ<span
+              class="mark">JPG </span>
+            .. في كل مره .. ابعت فيها شغلي؟؟؟....
+            <br />
+            و كمان هانتكلم عن خصائص الملفات المسوحوبة اتاش .. وايه هو افضل شكل
+            يكون عليه الملف وخصوصا الملفات اللي بتحتوي علي صورة....
+            <br /><br />
+            ويلا بينا نشوف . . .
+          </p>
+        </div>
+        <video class="video" controls>
+          <source
+            src="../../../Video/01_Autocad_tricks/03 JPG to DWG.mp4"
+            type="video/mp4"
+          />
+        </video>
+
+        <br /><br />
+
+        <div>
+          <p dir="rtl" class="parag_comp" id="long-p">
+            • من اشهر الصيغ المنتشرة بينا هي صيغة الـ
+            <span class="mark"> JPG </span> ... <br />
+            • وده يرجع لسهوله عرضها علي اي جهاز بين ايدينا .. سواء كان موبايل او
+            <span class="mark"> PC </span> او حتي
+            <span class="mark"> TV </span>... <br />
+            عشان كده اوقات بنحتاج نعمل <span class="mark"> INSERT </span> لصورة
+            <span class="mark"> JPG </span> داخل ملف الكاد بتاعنا...
+            <br />
+            محتاجين في الاول نعرف ان العلاقة بين ملفات الصور وملفات الكاد ليها
+            حالتين : <br /><br />
+            <span dir="ltr" class="mark">
+              <span class="underline">1.</span> ATTACHMENT (LINKED).
+            </span>
+            <br />
+            <span dir="ltr" class="mark">
+              <span class="underline">2.</span> EMBEDED (UN-LINKED).
+            </span>
+            <br />
+            <br />
+            في حالة <span class="mark"> Attachment </span> بيبقي في ارتباط بين
+            الملف اللي انا شغال عليه الـ <span class="mark"> DWG </span> ....
+            وملف التاش الـ <span class="mark"> JPG </span> اللي انا ساحبه 
+            عندي ..
+            - والارتباط ده بنسميه <span class="mark"> Link </span>...
+            <br /><br>
+            - بحقق ده عن طريق اني بروح علي قايمة الاكسرف من
+            <span class="mark"> XR </span>... اضغط علي السهم الصغيير ده واختار
+            <span class="mark"> Attach Image </span> ... <br />
+            - اروح لمسار الصورة اللي انا عايز اسحبها اتاش ...واضغط <span class="mark"> Open </span>... <br />
+            وممكن من هنا اعلم صح علي <span class="mark"> Specify on-screen </span> عشان احدد مكان الإنزال في الملف
+            بنفسي .. <br />
+            او بالطريقة الاسرع والاسهل <span class="mark"> (Drag Drop) </span> .. <br />
+            واحدد 
+            <br>
+            ... <span class="mark"> Insertion Point </span> ... 
+            <br>
+            ... <span class="mark"> Scale </span> ...
+            <br>
+            ... <span class="mark"> Rotation </span> ... 
+            <br /><br>
+            كده تم ربط ملف الـ <span class="mark"> JPG </span> بملف الاوتوكاد ... من خلال <span class="mark"> Link </span> ...
+            <br> <br />
+            هنلاحظ ان الخطوات دي هي نفس الخطوات اللي اتكلمنا عنها في الفيديو
+            اللي فات ... 
+            
+            واللي كان بيوضح علاقة الـ <span class="mark"> PDF </span> 
+            بملف الـ <span class="mark"> DWG </span> ... 
+            <br><br>
+            ولو لسه ماشوفتش الفيديو اللي فات .. إرجع قايمة الفيديهات وهاتلاقيه الفيديو رقم <span class="mark"> 2 </span> <span class="underline"> <a href="">أو اضغط هنا</a> </span> ... 
+            <br /><br>
+
+            <span class="mark2">التحكم في المرفقات (ATTACHMENT) </span><br>
+
+
+            نيجي دلوقتي للادوات اللي ممكن بيها اتحكم في الاتاشمنت اللي انا
+            سحبته…. <br />
+            - في البداية <SPAN class="mark"> Adjust tab </SPAN> .. جواها <SPAN class="MARK"> Brightness </SPAN> .. <SPAN class="MARK"> Contrast </SPAN> .. <span class="MARK">
+            Fade </span> .. <br />
+            والقيم دي بعدلها عشان احصل علي نتيجه مريحه في حالة اني عايز اشف
+            الصورة اللي انا ساحباها وارسمها كاد... <br />
+            والتطبيق ده ممكن نشرحه في فيديو لوحده .. نبين فيه الطريقه اللي
+            بستخدمها انا شخصيا لما بيبقي عندي صورة ومحتاج 
+            ارسمها كاد.. وكتير بنتعرض للموقف ده..
+            </BR> 
+            ومن <span class="mark"> Clipping </span> ممكن اظهر جزء معين من الاتاش واخفي باقي الاجزاء .. وكمان
+            اعدل المساحه الي ظاهرة زي منا عايز... 
+            <br />
+            و <span class="mark"> Remove Clipping </span> عشان الغي الكليب..
+            <br />
+            امنع ظهور الاتاش او افعل ظهوره من الاداه <span class="mark"> Show Image </span> ...
+            <br />
+            <span class="mark"> External References </span> هاتفتحلي قايمة الاكسرف .. 
+            واللي منها اقدر اتعامل مع اللينك الاتاش .. 
+            <br><br>
+            وده ينقلنا للكلام عن خصائص الروابط او اللينكات ... 
+            <br /><br>
+
+            
+            <span class="mark2"> خصائص الروابط او اللينكات </span><br>
+
+
+            ... في الاول محتاجين نعرف ان اي لينك في الاوتوكاد له شوية خصائص او
+            صفات ... فهمنا للصفات دي بيسهل عليناالتعامل مع كل لينكات الملفات مهما كانت صيغتها... 
+            <br />
+            <br />
+            <span class="underline mark"> <span class="mark">1.</span></span> اول صفه اني لما بفتح اي ملف كاد جواه اتاش لصورة <span class="mark"> JPG </span> او <span class="mark"> PDF </span> هايقوم
+            بعمليه بحث عن الملف الاصلي عشان يحمله 
+            <br />
+            داخل داخل اللوحه... loading
+            <br />
+            وعمليه البحث دي بتم علي مرحلتين ... في الاول بيبحث عن الاتاش في
+            المسار اللي محطوط فيه ملف الكاد اللي انا
+            <br />
+            فتحته... ولو معثرش عليه بينتقل للمرحلة التانيه في البحث وهو انه
+            بيستخدم اللينك اللي فيه مسار ملف الاتاش...
+            <br />
+            <br />
+            <span class="underline mark"> <span class="mark">2.</span></span> تاني حاجه لازم نعرفها ان اللينك ده مرتبط دايما بالمسار الموجود
+            فيه الملفJPG او اي اتاش بتعامل معاه ... <br />
+            • يعني لو اتغير مكان الاتاش علي الهارد او حتي اتغير اسمه .. زي كده
+            .. ملف الكاد مش هايقدر يوصل للاتاش ولا <br />
+            يحمله داخل لوحتك... <br />
+            • ولو حصل وان مكان الاتاش اتغير ... وفتحت الملف ومالاقيتش الاتاش ..
+            ساعتها هاتبقي مضطر تعرفه المسار الجديد وتغير اللينك...من هنا..
+            <br />
+            <br />
+            3. الصفة التالته ان اي تعديل هايتم علي الملف الاصلي للاتاش ...
+            هايبان اثره داخل لوحة الكاد .. بمجرد اني اعيد فتح الملف مرة تانية..
+            <br /><br />
+            4. اخر واهم حاجه .. انك في كل مرة هاتبعت فيها شغلك لاي جهه ...لازم
+            تبعت معاه كل الملفات اللي انت ساحبها اتاش .... <br /><br />
+            بس كده
+            <br />
+            سلام
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <a href="#">
+      <i class="far fa-caret-square-up" id="up_btn"></i>
+    </a>
+
+    <!-- <footer>
+      <div>
+        <p class="pFot">
+          Designed and developed by {
+          <a href="/00 DATA/About_us.html">
+            <img id="lgFot" src="../../../Logo/3O_footer.png" alt="3O-01.png"
+          /></a>
+          team } © 2021
+        </p>
+      </div>
+    </footer> -->
+
+    <script src="../../../JS/up_ptn.js"></script>
+    <script src="../../../JS/topic.js"></script>
+  </body>
+</html>

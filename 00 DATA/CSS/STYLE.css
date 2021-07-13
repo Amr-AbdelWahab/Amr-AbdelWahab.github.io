@@ -1,0 +1,120 @@
+/*  =================
+    tale of contants
+    =================
+    1. global styles
+    2. header
+    3. middle
+    4. footer
+*/
+
+/*  =================
+    1. global styles
+    =================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+
+body{
+  min-width: 600px;
+  background-image: url(../PIC/wave_cover2.png);
+  background-size: cover;
+  background-color: lightblue;
+  background-position-y: bottom;
+  background-attachment: fixed;
+
+}
+
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*  =================
+    scrollbar
+    =================*/
+
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+  cursor: pointer;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+  cursor: pointer;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #1c5253;
+}
+
+
+
+
+
+
+/*  =================
+    2. header separate style file
+    =================*/
+
+
+
+
+/*  =================
+    3. middle
+    =================*/
+
+
+
+.middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pback{
+  font-size: 100px;
+  
+}
+
+.far {
+  position: fixed;
+  right: 20px;
+  bottom: 1005px;
+  z-index: 3;
+  font-size: 350px;
+  color: #1c5253;
+  cursor: pointer;
+  transition: 0.5s all;
+  opacity: 0;
+}
+
+
+.far:hover {
+  transform: scale(1.1);
+  color: #ff0000;
+}
+.up-op0 {
+  opacity: 0;
+}
+
+.up-op1 {
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  font-size: 35px;
+
+  opacity: 1;
+}
+
