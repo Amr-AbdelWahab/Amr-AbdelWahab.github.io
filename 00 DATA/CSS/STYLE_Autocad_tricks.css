@@ -131,3 +131,11 @@ footer{
   z-index: 2;
   /* opacity: .5; */
 }
+
+
+@media only screen and (max-width: 399px) {
+  
+  footer{
+    display: none;
+  }
+}

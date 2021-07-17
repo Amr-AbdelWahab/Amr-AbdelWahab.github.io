@@ -56,32 +56,11 @@ h1 {
   position: sticky;
   top: 57px;
   padding: 0 10px;
-  z-index: 3;
+  z-index: 12;
   transition: 0.3s all ease-in-out;
 }
 
-@media only screen and (max-width: 810px) {
-  h1 {
-    float: left;
-  border-bottom: 1px solid rgb(255, 94, 0);
-  /* border-right: 1px solid rgb(255, 94, 0); */
-  border-radius: 15px;
-  font-size: 30px;
-  
-}
 
-
-.fststatment {
-  margin-top: 50px;
-  display: block;
-  color: blue;
-  border: 1px solid #000;
-  text-align: center;
-  border: 2px dashed white;
-  border-radius: 15px;
-  
-}
-}
 
 .topic{
   margin-bottom: 50px;
@@ -170,19 +149,88 @@ h1 {
   position: relative;
   margin-top: 50px;
   margin-bottom: 50px;
+  z-index: 2;
 }
 
 .second {
   text-align: center;
 }
 
-hr{
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+.up-op1 {
+  right: 10px;
+  bottom: 60px;
 }
+
 
 footer{
   position: fixed;
   bottom: -50px;
 }
+
+/*  =================
+    max-width: 810px
+    =================*/
+
+@media only screen and (min-width: 601px) and (max-width: 810px) {
+
+  .fststatment {
+  margin-top: 50px;
+  display: block;
+  border: 1px solid #000;
+  text-align: center;
+  border: 2px dashed white;
+  border-radius: 15px;
+}
+#topTitle {
+  border-radius: 0 0 15px 15px;
+  border-right: none;
+  border-bottom: 1px solid rgba(255, 94, 0, 0);
+  border-top: 1px solid rgb(255, 94, 0);
+  background-color: #1c5253;
+  font-weight: 180;
+  font-size: .9em;
+  top: 90px;
+  right: 10px;
+  float: right;
+
+}
+}
+
+/*  =================
+    max-width: 600px
+    =================*/
+
+@media only screen and (max-width: 600px) {
+
+  .titStick {
+    border-radius: 0 0 15px 15px;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 94, 0, 0);
+    border-top: 1px solid rgb(255, 94, 0);
+    background-color: #1c5253;
+    font-weight: 180;
+    font-size: .9em;
+    top: 90px;
+    float: right;
+  }
+
+  #topTitle {
+    border-radius: 0 0 15px 15px;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 94, 0, 0);
+    border-top: 1px solid rgb(255, 94, 0);
+    background-color: #1c5253;
+    font-weight: 180;
+    font-size: .9em;
+    top: 90px;
+    right: 10px;
+    float: right;
+  }
+
+  footer{
+    display: none;
+  }
+}
+
+
+
