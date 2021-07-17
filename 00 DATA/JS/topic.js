@@ -33,3 +33,23 @@ ham.addEventListener("click", () => {
     console.log("hi");
 
 })
+
+
+const article = document.querySelector("article");
+
+article.addEventListener("click", () => {
+    mor.classList.remove("sub-on-off");
+    // hamburger.classList.toggle("ham-activ");
+    // hamp.classList.toggle("hamp");
+    console.log("hi");
+})
+
+
+const mobMenu = document.getElementById("mob-menu");
+const toggle = document.getElementById("toggle");
+
+toggle.onclick = function(){
+    toggle.classList.toggle("togActive");
+    topTitle.classList.toggle("disNone");
+    mobMenu.classList.toggle("mob-menu-on");
+}
