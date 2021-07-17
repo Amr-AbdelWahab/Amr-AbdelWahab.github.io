@@ -9,10 +9,11 @@
 
   <link href="../../../Logo/lisp_48px.png" rel="icon" sizes="32x32" type="image/png" />
 
-  <link rel="stylesheet" href="../../../CSS/STYLE_header topic.css" />
   <link rel="stylesheet" href="../../../CSS/all.min.css" />
+  <link rel="stylesheet" href="../../../CSS/STYLE.css" />
   <link rel="stylesheet" href="../../../CSS/STYLE_footer.css" />
   <link rel="stylesheet" href="../../../CSS/STYLE_Autocad_tricks_Topic.css" />
+  <link rel="stylesheet" href="../../../CSS/STYLE_header topic.css" />
 </head>
 
 <body>
@@ -30,20 +31,74 @@
     </div>
 
     <nav>
-      <a href="../../../Autocad_tricks.html"
-      >Autocad Video Tricks</a>
+      <ul class="nav-list">
+        <li class="mlist">
+          <a href="../../../../application.html"><i class="navico fas fa-home"></i>
+            <p class="navp">home</p>
+          </a>
+        </li>
+
+        <li class="mlist">
+          <a href="../../../About_us.html"><i class="navico fas fa-address-card"></i>
+            <p class="navp">about us</p>
+          </a>
+        </li>
+
+        <li class="mlist">
+          <a href="../../../../00 DATA/Autocad_tricks.html"><i class="navico fas fa-sign-in-alt"></i>
+            <p class="navp">Back</p>
+          </a>
+        </li>
+
+        <li class="mlist" id="ham">
+          <a><i id="hamburger" class="navico fas fa-hamburger"></i>
+            <p id="hamp" class="navp">more</p>
+          </a>
+
+          <div class="sub-prnt">
+            <ul id="more" class="sub-menu" dir="ltr">
+              <li><a href="01_DWG_COMPARE.html">01 DWG_COMPARE</a></li>
+              <li><a href="02 PDF 2 DWG.html">02 PDF 2 DWG</a></li>
+              <li><a href="03 JPG to DWG.html">03 JPG to DWG</a></li>
+              <li>
+                <a href="04 By Layer vs BY Block.html">04 By Layer vs BY Block</a>
+              </li>
+              <li>
+                <a href="05 Array in AutoCAD.html">05 Array in AutoCAD</a>
+              </li>
+              <li>
+                <a href="06 Copy Array - Fit.html">06 Copy Array - Fit</a>
+              </li>
+              <li>
+                <a href="07 Installing FONTS & Text Style in AutoCad.html">07 FONTS & Text Style</a>
+              </li>
+              <li><a href="08 CHANGE PGP.html">08 pgp file</a></li>
+              <li><a href="09 Fatal Error.html">09 Fatal Error</a></li>
+              <li>
+                <a href="10 PDF to DWG - Scale Reference in AutoCad.html">10 Scale Reference</a>
+              </li>
+              <li>
+                <a href="11 lisp in Autocad - part 1.html">11 lisp part 1</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
     </nav>
-    <a href="../../../../application.html"><i class="fas fa-home"></i></a>
-</header>
+
+  </header>
 
   <article>
     <h1 id="topTitle" class="">By Layer vs BY Block Autocad</h1>
 
     <div class="topic">
-      <div class="parag_comp">
-        <p dir="rtl">
-          <span class="mark"> حكاية الباي لاير والباي بلوك </span>
-          <br><br>
+
+      <div>
+        <p dir="rtl" class="parag_comp" id="long-p">
+          <br>
+          <span class="mark fststatment"> حكاية الباي لاير والباي بلوك </span>
+          <br>
+          <br>
           ايه الفرق بين خصائص الـBy Layer و By Block في الكاد ...؟
           ليه في الكاد في باي بلوك لما فيه باي لاير ...؟
           هل في فرق بين الاتنين ...؟
@@ -51,36 +106,36 @@
       </div>
       <br>
       <video class="video" controls>
-        <source 
-        src="../../../Video/01_Autocad_tricks/04 By Layer vs BY Block - AutoCad.mp4" type="video/mp4" />
+        <source src="../../../Video/01_Autocad_tricks/04 By Layer vs BY Block - AutoCad.mp4" type="video/mp4" />
       </video>
-<br><br>
-      <div dir="rtl" >
+      <br><br>
+      <div dir="rtl">
         <p dir="rtl" class="parag_comp" id="long-p">
           اكيد لفت نظرك وجود اختيار الباي لاير والباي بلوك لما جيت تغيير بعض خصائص العناصر .... <br>
           ذي Color , line type , line width <br>
           وللوهلة الاولي حسيت ان الباي بلوك بتديك نفس نتيجه الباي لاير... <br>
           اكيد ساعتها قولت في نفسك " لما التنين بيدوا نفس النتيجه ! امال اوتوديسك عملتهم ليه ...!؟ " <br>
           <br>
-          لكنك نفضت للوساوس دي وفضلت مكمل حياتك مع الكاد عادي ... ( من امتي بنسأل الاساله دي ) 
+          لكنك نفضت للوساوس دي وفضلت مكمل حياتك مع الكاد عادي ... ( من امتي بنسأل الاساله دي )
           <br>
-          الحقيقه اللي حبيت افاجأك بيها ان الاختيارين دول لوظيفتين مختلفين عن بعض خالص .. 
+          الحقيقه اللي حبيت افاجأك بيها ان الاختيارين دول لوظيفتين مختلفين عن بعض خالص ..
           <br>
-          مش منطقي يعني اوتوديسك تعمل اختيار مالوش لازمة .. ده حتي يبقي عيب في حقها .. 
+          مش منطقي يعني اوتوديسك تعمل اختيار مالوش لازمة .. ده حتي يبقي عيب في حقها ..
+          <br>
+          <br>
+          <span class="mark2">By Layer</span>
         </p>
-        
-        
-        <h1 style="color: red;">By Layer</h1>
-        
+        <br>
+
         <p dir="rtl" class="parag_comp" id="long-p">
-          خلينا نتكلم في الاول عن الـ By Layer 
-          ....هاتلاقيها في خصائص Color , line type & line width.. 
+          خلينا نتكلم في الاول عن الـ By Layer
+          ....هاتلاقيها في خصائص Color , line type & line width..
           <br>
-          الـ By Layer في اختيار الالوان يعني تحديد لون العنصر علي حسب لون الطبقة اللي محطوط فيها ... 
-          <br> 
-          مثال علي خاصية الـ Color ... 
+          الـ By Layer في اختيار الالوان يعني تحديد لون العنصر علي حسب لون الطبقة اللي محطوط فيها ...
+          <br>
+          مثال علي خاصية الـ Color ...
           <br> <br>
-          لو انشأنا طبقتين بلونين مختلفين .. وجيت رسمت مجموعة من العناصر الوانهم By Layer ... 
+          لو انشأنا طبقتين بلونين مختلفين .. وجيت رسمت مجموعة من العناصر الوانهم By Layer ...
           <br>
           وحددت عنصر منهم ونقلته بين الطبقات.. ....هالاقي ان لونه اتغيرت بلون الطبقه اللي بنقله عليها... <br>
           ولو غيرت لون الـlayer بلون تاني .. هلاقي كل العناصر اللي جوا الـ layer اتغيرت الوانها …لأن الوانها ببساطه By
@@ -90,23 +145,29 @@
           كده هو علي اللاير دي فعلا لكن لونه مش واخده من خصائص اللاير... <br>
           نفس الكلام ده طبقه علي خصائص الـ Line type & Line width .... <br>
           جرب وقولي في التعليقات ايه الاخبار...
+
+          <br><br>
+          <span class="mark2">By Block</span>
+          <br>
+
         </p>
 
-        <h1 style="color: red;">By Block</h1>
+
+
 
         <p dir="rtl" class="parag_comp" id="long-p">
 
-        نيجي لحكاية الـ By Block ....
-         <br>
-          
-          الباي بلوك من اسمه كده معمول للبلوك 
+          نيجي لحكاية الـ By Block ....
           <br>
-           (نورت المحكمة)
+
+          الباي بلوك من اسمه كده معمول للبلوك
+          <br>
+          (نورت المحكمة)
           استني بس
           <br>
-           ... قصدي انك مش هاتحس واثره الا عي البلوكات .. وده السبب اننا في البدايه بنفتكر انه مالوش لازمه ... 
-           <br>
-          زي ما قولنا في الباي لاير ان العنصر واخد الخصائص بتاعته من خصائص اللاير ... 
+          ... قصدي انك مش هاتحس واثره الا عي البلوكات .. وده السبب اننا في البدايه بنفتكر انه مالوش لازمه ...
+          <br>
+          زي ما قولنا في الباي لاير ان العنصر واخد الخصائص بتاعته من خصائص اللاير ...
           <br>
           كمان الباي بلوك معناها ان العناصر اللي جوه البلوك واخده خصائصها من خصائص البلوك نفسه من بره ..
           (الليمبي)
@@ -114,22 +175,22 @@
           خليني اوضح ده بمثال ...
           <br>
           معايا بلوك زي ده بلون اخضر موجود علي لاير بلون مختلف ...
-          ملاحظ طبعا انه مش متأثر بلون اللاير مهما اتغيرت ... لسه لونه اخضر 
+          ملاحظ طبعا انه مش متأثر بلون اللاير مهما اتغيرت ... لسه لونه اخضر
           <br>
           حتي لو غيرت لون البلوك من بره للون الاحمر .... برضه هايفضل لونه اخضر
           طب افرض لو انا عايز اتحكم في لون البلوك من بره زي ما عملنا في العناصر العادية ... اعمل ايه؟؟..
           <br>
           هنا تظهر فايدة By Block واللي هتلاقيها برضه لخصائص الـ color , line type & line width
-          عشان تتحكم في خصائص التلاته دول وتخلي البلوك ينفصل عن خصائص الطبقه اللي هوا فيها تعمل الاتي: 
+          عشان تتحكم في خصائص التلاته دول وتخلي البلوك ينفصل عن خصائص الطبقه اللي هوا فيها تعمل الاتي:
           <br>
           تدخل علي تعديل البلوك عن طريق الـBlock Editor ...
-          تعلم علي كل العناصر اللي مطلوب التحكم في لونها من بره البلوك ... 
+          تعلم علي كل العناصر اللي مطلوب التحكم في لونها من بره البلوك ...
           <br>
           تخلي الون بتاعها By block ... وتقفل البلوك ايديتور
-          بس كده... .. كده لون البلوك مش مرتبط بلون اللاير ولا لون العناصر من جوه .. 
+          بس كده... .. كده لون البلوك مش مرتبط بلون اللاير ولا لون العناصر من جوه ..
           <br>
-          دي كل الحكاية .. جرب بنفسك .. 
-          <br> 
+          دي كل الحكاية .. جرب بنفسك ..
+          <br>
           ..
           <br />
           وسلام
@@ -141,7 +202,7 @@
 
   <a href="#">
     <i class="far fa-caret-square-up" id="up_btn"></i>
-  </a href="#">
+  </a>
 
 
   <footer>
