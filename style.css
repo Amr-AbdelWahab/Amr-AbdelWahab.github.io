@@ -1,0 +1,689 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+scroll-behavior: smooth;
+}
+
+/* ----------------------------- paragragh font ----------------------------- */
+
+@font-face {
+  font-family: Changa;
+  src: url("../Fonts/Changa/Changa-VariableFont_wght.ttf");
+}
+
+/* ------------------------------------ head font ----------------------------------- */
+
+@font-face {
+  font-family: Reggae One;
+  src: url("../Fonts/Reggae_One/ReggaeOne-Regular.ttf");
+}
+
+:root {
+  --main-color: #3a60f4;
+  --hover: #ff6633;
+}
+
+header {
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+}
+
+.logoImg {
+  width: 200px;
+  padding: 2px;
+  border-radius: 15px;
+  border: 1px dashed rgba(0, 0, 0, 0);
+  transition: 0.7s ease;
+}
+.logoImg:hover {
+  /* width: 205px; */
+  border: 1px dashed #000;
+}
+
+.navigation a {
+  color: var(--main-color);
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding-left: 30px;
+
+  display: inline-block;
+  transition: 0.7s ease;
+}
+
+.navigation a:hover {
+  color: var(--hover);
+  transform: scale(1.1);
+}
+
+section {
+  padding: 100px 200px;
+  font-weight: 600;
+}
+
+.main {
+  border: 2px solid #fff;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(images/background-01.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.mainLogo {
+  display: none;
+}
+
+.mainInfo {
+  /* border: 1px solid #000; */
+  padding-left: 200px;
+}
+
+.main h2 {
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+.main h2 span {
+  display: inline-block;
+  margin-top: 10px;
+  color: #4e9eff;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.main h3 {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: 5px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.mainBtn {
+  color: #fff;
+  background-color: var(--main-color);
+
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  padding: 0.9375em 2.1875em;
+  letter-spacing: 1px;
+  border-radius: 1em;
+
+  display: inline-block;
+  margin-bottom: 40px;
+
+  transition: 0.7s ease;
+}
+
+.mainBtn:hover {
+  background-color: #0a49f6;
+  transform: scale(1.1);
+}
+
+.soIcon {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.7em;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: inline-block;
+  transform: rotate(0deg);
+
+  transition: 0.7s ease;
+}
+.soIcon:hover {
+  transform: rotate(1turn);
+  color: var(--hover);
+  /* box-shadow: 0 0 5px var(--hover) ; */
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: var(--main-color);
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  color: var(--main-color);
+  font-size: 8em;
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+}
+
+.info h3 {
+  color: var(--main-color);
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+/* Cadology Section */
+
+.cadology {
+  background-color: #000016;
+}
+
+.cadology .content {
+  margin-top: 30px;
+}
+
+.cadCard {
+  background-color: #fff;
+  min-height: 14em;
+  width: 23em;
+  overflow: hidden;
+  border-radius: 15px;
+  margin: 20px;
+
+  transition: 0.7s ease;
+}
+
+.cadInfo {
+  padding: 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.cadDesc {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+  font-family: Changa;
+}
+
+.cadCard:hover {
+  transform: scale(1.1);
+}
+.cadCardTitle {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 800;
+  margin-top: 10px;
+}
+.watch {
+  text-decoration: none;
+  color: var(--main-color);
+  transition: 0.7s ease;
+}
+.watch:hover {
+  text-decoration: none;
+  color: var(--hover);
+  padding-right: 1.1em;
+}
+
+.cadCard:hover img {
+  filter: grayscale();
+  opacity: 0.5;
+}
+
+.cadImg img {
+  width: 100%;
+  filter: none;
+  transition: 0.7s ease;
+}
+
+.contact {
+  height: calc(100vh - 100px);
+}
+.contact .content {
+  margin-top: 10em;
+  padding-bottom: 0px;
+}
+
+.contact .icon {
+  font-size: 3.5em;
+}
+
+.contact h3 {
+  color: black;
+}
+
+footer {
+  height: 100px;
+  background-color: #000016;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 130px;
+}
+footer p {
+  color: #fff;
+  font-size: 1em;
+}
+
+footer span {
+  font-size: 1.4em;
+  color: var(--hover);
+}
+
+.up {
+  color: var(--main-color);
+  font-size: 3em;
+  position: fixed;
+  bottom: 20px;
+  right: -50px;
+  transform: rotate(-90deg);
+  cursor: pointer;
+  transition: 0.7s ease;
+}
+.up:hover {
+  color: var(--hover);
+  bottom: 25px;
+}
+
+.show {
+  right: 50px;
+  transform: rotate(0);
+}
+
+@media (max-width: 1623px) {
+  .main {
+    background: url(images/background-03.jpg) no-repeat;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    padding: 0 100px;
+  }
+
+  .mainLogo {
+    display: block;
+    width: 500px;
+  }
+
+  .title {
+    font-size: 1.8em;
+  }
+
+  section {
+    padding: 100px 20px;
+  }
+
+  .main h2 {
+    font-size: 1em;
+  }
+  .main h3 {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 1280px) {
+  section {
+    padding: 100px 50px;
+  }
+
+  header {
+    padding: 5px 20px;
+  }
+
+  .main {
+    padding: 0 100px;
+  }
+
+  .mainInfo {
+    padding-left: 100px;
+  }
+
+  .navigation a {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .mainLogo {
+    width: 500px;
+  }
+}
+
+@media (max-width: 950px) {
+  .main {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    height: calc(100vh - 90px);
+    border: 3px solid rgb(255, 255, 255);
+  }
+
+  
+  .mainLogo {
+    display: block;
+    width: calc(100vw - 100px);
+    border: 1px solid rgba(0, 255, 255, 0.411);
+    border-radius: 50px;
+    margin: 0;
+    margin-top: 100px;
+    padding: 30px;
+  }
+  .mainInfo {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+  }
+  header {
+    height: 90px;
+  }
+  .card {
+    width: 40%;
+  }
+  .cadCard {
+    width: 40%;
+  }
+  .cadCard strong {
+    flex-direction: column;
+  }
+  footer span {
+    display: inline-block;
+  }
+  .social-icons {
+    font-size: larger;
+  }
+  footer .social-icons {
+    width: 200px;
+    font-size: smaller;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contact .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
+
+
+
+  
+  
+  @media (max-width: 600px) {
+
+        nav {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+        }
+        .main {
+            flex-direction: column-reverse;
+            justify-content: center;
+            height: calc(100vh - 200px);
+            border: 6px solid rgb(255, 255, 255);
+            border-radius: 20px;
+            padding: 0;
+            margin: 0;
+        }
+        .mainLogo {
+            display: block;
+            width: calc(100vw - 150px);
+            border: none;
+            border-radius: 50px;
+            margin: 0;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            padding: 30px;
+        }
+        .mainInfo {
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            font-size: 1em;
+        }
+        .mainInfo h3 {
+            width: 100%;
+            letter-spacing: 7px;
+        }
+        section {
+            border: 6px solid rgb(255, 255, 255);
+            border-radius: 20px;
+        }
+        .card {
+            width: 80%;
+            padding: 1em;
+            font-size: medium;
+        }
+        .card .icon {
+            font-size: 4em;
+        }
+        .cadology{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        .cadCard {
+            width: 40%;
+        }
+        .contact .title {
+            margin-top: 30px;
+        }
+        .contact .content {
+            margin: 0;
+        }
+        .contact .icon {
+            font-size: 2em;
+        }
+        footer {
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 0;
+            margin: 0;
+        }
+        footer p {
+            font-size: x-small;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+        }
+        footer span {
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+        }
+        .social-icons {
+            font-size: larger;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        footer .social-icons {
+            width: 100%;
+            font-size: smaller;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .show {
+            right: 15px;
+            font-size: 2em;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 450px) {
+  header {
+    height: 35px;
+    padding: auto !important;
+    margin: auto !important;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  header a {
+    padding-left: 0 !important;
+    margin: 0;
+}
+nav a:hover{
+    border-radius: 10px;
+    border-top: 1px solid  var(--main-color);
+    border-bottom: 1px solid  var(--main-color);
+  }
+  .logoImg {
+    display: none;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .home .soIcon {
+    color: var(--main-color);
+    background-color: #f0f0f0;
+    padding: 5px;
+    margin-top: -1px;
+    border-radius: 0 0 50% 50%;
+    position: fixed;
+    top: 35px;
+  }
+  .home .soIcon:hover {
+    transform: rotate(0turn);
+  }
+  .main {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    height: 20px;
+    border: 6px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  .mainLogo {
+    display: block;
+    width: calc(100vw - 100px);
+    border: none;
+    border-radius: 50px;
+    margin: 0;
+    margin-top: 10px;
+    padding: 30px;
+  }
+  .mainInfo {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    font-size: 0.8em;
+    /* border: 1px solid rgb(0, 255, 242); */
+  }
+  .mainInfo h3 {
+    width: 100%;
+    letter-spacing: 7px;
+  }
+  section {
+    /* border: 1px solid rgb(0, 255, 242); */
+    border: 6px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 50px 10px;
+  }
+  .card {
+    width: 100%;
+    padding: 1em;
+    font-size: medium;
+  }
+  .card .icon {
+    font-size: 4em;
+  }
+
+  .cadCard {
+    width: 70%;
+  }
+  .contact .title {
+    margin-top: 30px;
+  }
+  .contact .content {
+    margin: 0;
+  }
+  .contact .icon {
+    font-size: 2em;
+  }
+  footer {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+  }
+  footer p {
+    font-size: x-small;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  footer span {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+  .social-icons {
+    font-size: larger;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  footer .social-icons {
+    width: 100%;
+    font-size: smaller;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .show {
+    right: 15px;
+    font-size: 2em;
+  }
+}
