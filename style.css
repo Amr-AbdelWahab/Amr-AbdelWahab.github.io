@@ -155,6 +155,9 @@ section {
   color: var(--hover);
   /* box-shadow: 0 0 5px var(--hover) ; */
 }
+.goServ{
+  display: none;
+}
 
 .title {
   display: flex;
@@ -421,6 +424,8 @@ footer span {
   }
   .social-icons {
     font-size: larger;
+    justify-content: center;
+
   }
   footer .social-icons {
     width: 200px;
@@ -479,6 +484,7 @@ footer span {
             width: 100%;
             letter-spacing: 7px;
         }
+
         section {
             border: 6px solid rgb(255, 255, 255);
             border-radius: 20px;
@@ -531,6 +537,8 @@ footer span {
         .social-icons {
             font-size: larger;
             justify-content: space-evenly;
+            justify-content: center;
+
             align-items: center;
         }
         footer .social-icons {
@@ -555,6 +563,11 @@ footer span {
 
 
 
+/* @media (min-width: 450px) {
+  .goServ{
+    display: none;
+  }
+} */
 @media (max-width: 450px) {
   header {
     height: 35px;
@@ -611,19 +624,36 @@ nav a:hover{
     border-radius: 50px;
     margin: 0;
     margin-top: 10px;
-    padding: 30px;
+    padding: 0px;
   }
   .mainInfo {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
+    margin-top: -50px;
     font-size: 0.8em;
     /* border: 1px solid rgb(0, 255, 242); */
   }
   .mainInfo h3 {
-    width: 100%;
-    letter-spacing: 7px;
+    width: 90%;
+    letter-spacing: 5px;
   }
-  section {
+  .mainInfo h3, 
+  .mainInfo h2,
+  .mainInfo .mainBtn
+  {
+    margin-left: 10px;
+  }
+  .goServ{
+    color: #f0f0f0;;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-top: 40px;
+  }
+
+
+    section {
     /* border: 1px solid rgb(0, 255, 242); */
     border: 6px solid rgb(255, 255, 255);
     border-radius: 20px;
@@ -633,6 +663,7 @@ nav a:hover{
     width: 100%;
     padding: 1em;
     font-size: medium;
+    margin: 15px 0;
   }
   .card .icon {
     font-size: 4em;
@@ -646,6 +677,9 @@ nav a:hover{
   }
   .contact .content {
     margin: 0;
+  }
+  .contact .info p{
+    /* font-size:1rem; */
   }
   .contact .icon {
     font-size: 2em;
@@ -672,6 +706,7 @@ nav a:hover{
   }
   .social-icons {
     font-size: larger;
+    justify-content: center;
     justify-content: space-evenly;
     align-items: center;
   }
