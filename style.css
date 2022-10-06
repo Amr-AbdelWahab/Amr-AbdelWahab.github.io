@@ -27,6 +27,7 @@ scroll-behavior: smooth;
 :root {
   --main-color: #3a60f4;
   --hover: #ff6633;
+  --hover-BG: #ffe9e2;
 }
 
 header {
@@ -183,10 +184,19 @@ section {
   padding: 25px;
   margin: 15px;
   transition: 0.7s ease;
+  position: relative;
+}
+.card::after {
+  /* content: ""; */
+  position: absolute;
+  width: 100px;
+  height: 100px;
 }
 
 .card:hover {
-  transform: scale(1.1);
+  /* transform: scale(1.05); */
+  background-color: var(--hover-BG);
+
 }
 
 .icon {
@@ -205,6 +215,41 @@ section {
   font-weight: 700;
   margin: 10px;
 }
+.card.seeMore .info :nth-child(3) {
+  color: var(--hover);
+  margin: 10px 0 10px;
+  text-decoration: underline;
+}
+.card.seeMore .info :nth-child(3) i {
+  color: var(--hover);
+  margin: 10px 0 10px;
+  text-decoration: none;
+}
+
+.card.seeMore a {
+  color: white;
+  display: block;
+  padding: 5px;
+  text-decoration: none !important;
+  background-color: var(--main-color);
+  border: 3px solid var(--main-color);
+  border-radius: 5px;
+  transition: 0.7s ease;
+}
+.card.seeMore a i {
+  margin-left: 10px;
+  transform: scale(1.5);
+}
+.card.seeMore.Instructor a i {
+}
+.card.seeMore a:hover {
+  background-color: var(--hover);
+  letter-spacing: 2px;
+
+}
+
+
+
 
 /* Cadology Section */
 
