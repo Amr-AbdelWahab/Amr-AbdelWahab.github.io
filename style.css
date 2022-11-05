@@ -28,6 +28,7 @@ scroll-behavior: smooth;
   --main-color: #3a60f4;
   --hover: #ff6633;
   --hover-BG: #ffe9e2;
+  --hover-BG: #dce3ff;
 }
 
 header {
@@ -116,7 +117,24 @@ section {
   letter-spacing: 5px;
   margin-top: 10px;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
 }
+.main h3 img {
+  width: 80px;
+  transition: 0.7s ease;
+}
+.main h3 a {
+  color: #fff;
+  text-decoration: none;
+  width: fit-content;
+  height: fit-content;
+  transition: 0.7s ease;
+}
+.main h3 a:hover img{
+  transform: scale(1.2) translateX(10px);
+}
+
 
 .mainBtn {
   color: #fff;
@@ -194,7 +212,7 @@ section {
 }
 
 .card:hover {
-  /* transform: scale(1.05); */
+  transform: scale(1.03);
   background-color: var(--hover-BG);
 
 }
@@ -286,7 +304,7 @@ section {
 }
 
 .cadCard:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
 }
 .cadCardTitle {
   display: flex;
