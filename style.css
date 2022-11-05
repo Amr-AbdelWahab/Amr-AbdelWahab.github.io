@@ -14,14 +14,14 @@ scroll-behavior: smooth;
 
 @font-face {
   font-family: Changa;
-  src: url("../Fonts/Changa/Changa-VariableFont_wght.ttf");
+  src: url("Fonts/Changa/Changa-VariableFont_wght.ttf");
 }
 
 /* ------------------------------------ head font ----------------------------------- */
 
 @font-face {
   font-family: Reggae One;
-  src: url("../Fonts/Reggae_One/ReggaeOne-Regular.ttf");
+  src: url("Fonts/Reggae_One/ReggaeOne-Regular.ttf");
 }
 
 :root {
@@ -82,7 +82,7 @@ section {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url(images/background-01.jpg) no-repeat;
+  background:url(images/background-01.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -640,6 +640,7 @@ footer span {
   header {
     display: flex;
     flex-direction: column;
+
   }
   header a {
     padding-left: 0 !important;
@@ -658,17 +659,20 @@ nav a:hover{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+
   }
-  .home .soIcon {
+  .home i {
     color: var(--main-color);
     background-color: #f0f0f0;
-    padding: 5px;
+    padding: 5px 7px 7px;
+    border-top: none;
     margin-top: -1px;
     border-radius: 0 0 50% 50%;
     position: fixed;
     top: 35px;
+    z-index: 10;
   }
-  .home .soIcon:hover {
+  .home i:hover {
     transform: rotate(0turn);
   }
   .main {
