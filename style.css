@@ -335,7 +335,7 @@ section {
 }
 
 .contact {
-  height: calc(100vh - 100px);
+  /* height: calc(100vh - 100px); */
 }
 .contact .content {
   margin-top: 10em;
@@ -348,6 +348,15 @@ section {
 
 .contact h3 {
   color: black;
+}
+center.portofolio a {
+  scale: 1.02;
+  transition: all 0.5s ease;
+}
+center.portofolio a:hover {
+  transform: scale(1.1);
+  color: red;
+letter-spacing: 2px;
 }
 
 footer {
